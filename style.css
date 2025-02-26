@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(223, 217, 217);
+}
+#nav
+{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 30px;
+    padding: 0px 30px;
+}
+#nav h4{
+    font-size: 1.3vw;
+    font-weight: 600;
+}
+#nav i{
+    background-color: black;
+    color: white;
+    font-size: 1.5vw;
+    padding: 10px;
+    border-radius: 50%;
+    font-weight: 300px;
+}
+#center{
+    padding: 15px 80px;
+    width: 100%;
+}
+#center h1{
+    font-size: 3.5vw;
+    font-weight: 400;
+    line-height: 4vw;
+}
+#center-in{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+#center-in p{
+    font-size: 1vw;
+    font-weight: 100;
+    color: #111;
+    line-height: 1.5vw;   
+}
+#center-right{
+    width: 20%;
+}
+.elem{
+    padding: 8px 0;
+    border-top: 1px solid #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.elem a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 200;
+    font-size: 1.3vw;
+}
+.elem i{
+    font-size: 1.5vw;
+    font-weight: 500;
+    opacity: 0;
+}
+.elem:hover i{
+    opacity: 1;
+    transition: 1.5s;
+}
+/* .elem:hover a{
+    transition: 1.5s;
+    text-decoration: underline;
+} */
+#bottom{
+    height: 42%;
+    width: 100%;
+    background-image: url(https://images.pexels.com/photos/7679725/pexels-photo-7679725.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    background-position: 0 37%;
+}
+@media(max-width:600px)
+{
+    #nav
+    {
+        height: 50px;
+        gap: 15px;
+        padding: 0px 10px;
+    }
+    #nav h4{
+        font-size: 4vw;
+        display: none;
+    }
+    #nav i{
+        font-size: 4.5vw;
+    }
+    #center{
+        padding: 15px 20px;
+    }
+    #center h1{
+        font-size: 9vw;
+        line-height: 10vw;
+    }
+    #center-in{
+        margin-top: 25px;
+        flex-direction: column;
+        gap: 27px;
+    }
+    #center-in p{
+        font-size: 3vw;
+        line-height: 4vw;   
+    }
+    #center-right{
+        width: 100%;
+    }
+    .elem{
+        padding: 10px 0;
+        border-top: 1px solid #000;
+    }
+    .elem a{
+        font-weight: 100;
+        font-size: 3.5vw;
+    }
+    .elem i{
+        font-size: 4vw;
+        font-weight: 500;
+        opacity: 1;
+    }
+    #bottom{
+        height: 40%;
+    }
+    
+}
